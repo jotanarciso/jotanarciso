@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jotanarciso</title>
+  </head>
+  <body>
+    <style>
+      ::-moz-selection {
+        color: black;
+      }
+      ::selection {
+        color: black;
+      }
+      body {
+        background: black;
+        color: white;
+        word-break: break-all;
+      }
+      b {
+        font-size: 36em;
+      }
+      .content {
+        min-height: 95vh;
+        max-width: 100%;
+      }
+      i {
+        color: gray;
+      }
+      span#karamazov {
+        font-size: 17em;
+        position: absolute;
+        color: red;
+        display: none;
+        opacity: 1;
+        animation: fade 2s linear;
+      }
+
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <div class="content">
+      <span id="karamazov"
+        >“Life is paradise, and we are all in paradise, but we refuse to see it.” - The Brothers Karamazov</span
+      >
+      <b>Ex nihilo nihil fit</b>
+      <br />
+      <br />
+      With "/jotanarciso" you find me on Medium, Github, Twitter, Instagram and
+      Linkedin.
+    </div>
+    <i>Soon something here (for real)</i>
+  </body>
+
+  <script>
+    window.onscroll = function (ev) {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        document.getElementById("karamazov").style.display = "block";
+      }
+    };
+  </script>
+</html>
